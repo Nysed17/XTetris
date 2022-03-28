@@ -1,5 +1,5 @@
 #include "Tetramini.h"
-
+#include <stdio.h>
 #include <stdlib.h>
 
 int Tet1[]={0,0,0,0,1,1,1,1,0,0,0,0};
