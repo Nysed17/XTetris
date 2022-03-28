@@ -17,7 +17,7 @@ void gotoxy(int posx, int posy){
 
 void print_tet(){
     
-
+diocane
 }
 
 void print_c(char c) { // se guardi nel main alla fine c'e scritto Tab[][]=c ed il 'c' che torna qua è semplicemente un #
