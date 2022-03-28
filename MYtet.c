@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
+
 #define x  12
 #define y  17
-
-
 
 void print_c(char c) {
 	switch (c) {
@@ -31,6 +30,8 @@ int i, j;
 		}
 		printf("\n");	
 	}
+	//should return something
+	return 0;	
 }
 
 int main(){
