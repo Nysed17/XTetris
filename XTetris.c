@@ -8,6 +8,8 @@
 #define x  12
 #define y  17
 
+//main code
+
 int posx = 12;
 int posy = 17;
 
