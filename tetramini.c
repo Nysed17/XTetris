@@ -16,5 +16,4 @@ struct grandezze g[5];
 void tet(){
     g[1].size = 3;
     g[1].tet = "#";
-    //tutta sbura niente sostanza
 }
