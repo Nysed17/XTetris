@@ -1,0 +1,419 @@
+\hypertarget{func_8c}{}\doxysection{func.\+c File Reference}
+\label{func_8c}\index{func.c@{func.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}title.\+c\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structntet}{ntet}}
+\item 
+struct \mbox{\hyperlink{structmtet}{mtet}}
+\item 
+struct \mbox{\hyperlink{structgame}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}~20
+\item 
+\#define \mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}~12
+\item 
+\#define \mbox{\hyperlink{func_8c_af2fd05c57257a8c2eee11a1d65918075}{bl}}~\char`\"{}▣\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{func_8c_a02f332b000f0b245186ce0988c48e56e}{gotoxy}} (int posx, int posy)
+\item 
+void \mbox{\hyperlink{func_8c_a02526b5fcce6355fc1b772644b53f9e5}{scorecheck}} (int score)
+\item 
+int \mbox{\hyperlink{func_8c_aac34210564f72290aa1e2dc985470083}{stoptetr}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+void \mbox{\hyperlink{func_8c_abf3290c02f9b57e65a5d4816bd3a27c1}{otherblockcollision}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+void \mbox{\hyperlink{func_8c_a8868026c5834c13b353e777e9db461d6}{movep1}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a6f1b7ab1a2f7df2cfed3e753b156f22a}{movep2}} (char Tab2\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a66455c53f0d31ae15446b2a8a9229198}{colors}} (\mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+void \mbox{\hyperlink{func_8c_ab04fcbf2437d93c5b5518bb3e2642ac3}{Print\+Char\+Tab}} (char c, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+void \mbox{\hyperlink{func_8c_aa1d06686b38176848ea51436095156a2}{copyblock}} (char tetr\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, char tet\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \mbox{\hyperlink{func_8c_a7c7fdad815c4a6889d481a2436a35a00}{rotate\+\_\+process}} (char \mbox{\hyperlink{func_8c_a0d45ea75da607b121182c65a130cac60}{tab}}\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, int size)
+\item 
+void \mbox{\hyperlink{func_8c_a8f8cacc4cd921080272124abcfa5855f}{cleartab}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, int movx, int movy)
+\item 
+int \mbox{\hyperlink{func_8c_a34f5b70851f3648f0bb8dbf7a790b173}{randomnumber}} ()
+\item 
+int \mbox{\hyperlink{func_8c_a33df7ab64c99a9106c743e739738a696}{checkrandom}} (int n, \mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo)
+\item 
+void \mbox{\hyperlink{func_8c_a00ba8a942709b13ffb1423bff2a232d6}{randomblock}} (\mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+void \mbox{\hyperlink{func_8c_ad1ede946a37fc0de1c8aee8a7b421c86}{changetab}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, char Tab2\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, char tetr\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, int movx, int movy, int movx2, int movy2)
+\item 
+void \mbox{\hyperlink{func_8c_a8642636811ac3c56c171794f1949643c}{choose}} (\mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_abe812d96fdd0470234877991ade66713}{tetrgui}} (\mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a0d45ea75da607b121182c65a130cac60}{tab}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+int \mbox{\hyperlink{func_8c_a0c50fec11d31d5ffeceaf459d9053154}{removelines}} (char $\ast$Tab)
+\item 
+void \mbox{\hyperlink{func_8c_a58c66d05af5abbe6bf0cf645219634af}{countlines}} (char $\ast$Tab)
+\item 
+void \mbox{\hyperlink{func_8c_afbeee4a73d70905444c856098f7a3b20}{addlines}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, int n)
+\item 
+void \mbox{\hyperlink{func_8c_a26a041f74e63799612ee278e55fdb5dd}{dupanother}} (char $\ast$Tab, char Tab2\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a082847713f4e80511d628d188e1fd516}{dupanotherp2}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, char $\ast$Tab2, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a309191027b3a482d2e77e0c15c37c186}{restoreproblem}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]})
+\item 
+void \mbox{\hyperlink{func_8c_a00f7b4b1de7f01e8c143900c8724c82e}{checkscorep1}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a74e58df02c6b8839b9481e02f6e16ce2}{checkscorep2}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_aed525c96ea259f252b021035ee87e208}{win}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_a706b72067b721ff9a44610feadcd3ea4}{returngameover}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+int \mbox{\hyperlink{func_8c_a2bb89310b8b59391a66af036a5517116}{gameoverreturn}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\item 
+void \mbox{\hyperlink{func_8c_af7a67e506085e51a147d8cff930763d2}{spacep}} (char space\mbox{[}5\mbox{]}\mbox{[}1\mbox{]})
+\item 
+void \mbox{\hyperlink{func_8c_a6276b49bdb9c9be23b282e7be3ca7c69}{mod2gameover}} (char Tab\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, char Tab2\mbox{[}\mbox{\hyperlink{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}{x}}\mbox{]}\mbox{[}\mbox{\hyperlink{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}{y}}\mbox{]}, \mbox{\hyperlink{structmtet}{mtet}} $\ast$obj, \mbox{\hyperlink{structgame}{game}} $\ast$gm, \mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo)
+\item 
+void \mbox{\hyperlink{func_8c_ad5b4ddc7fc24e9b0ed398a4988dcf0e7}{sdoppiapezzi}} (\mbox{\hyperlink{structgame}{game}} $\ast$gm, \mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo)
+\item 
+void \mbox{\hyperlink{func_8c_ad3bec93887f2a5376b0cc14074cf670b}{initntet}} (\mbox{\hyperlink{structntet}{ntet}} $\ast$pezzo)
+\item 
+void \mbox{\hyperlink{func_8c_a457d1e2b0ce6236fdb7b7545e08a941f}{initmtet}} (\mbox{\hyperlink{structmtet}{mtet}} $\ast$obj)
+\item 
+void \mbox{\hyperlink{func_8c_a3eb9ab04e251f9dc3a6c918c691bc8b7}{initgame}} (\mbox{\hyperlink{structgame}{game}} $\ast$gm)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{func_8c_a1ea075e9591db618f87c13ea01077cde}{one}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+char \mbox{\hyperlink{func_8c_ac54f7f8c8d38a642711efa4a1a51a224}{two}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+char \mbox{\hyperlink{func_8c_a4e24f316c9beb1d26f62e6edced6cbac}{three}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+char \mbox{\hyperlink{func_8c_a929ddaca124c3f0cf7cd47fbdf2257e3}{four}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+char \mbox{\hyperlink{func_8c_a0712ed85d0e6c83a03a0c05d7c7fa053}{five}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+char \mbox{\hyperlink{func_8c_a121389ffce45bd9fc628b1149cc99db2}{six}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+char \mbox{\hyperlink{func_8c_afb13b4245798a175d1b1daaa2786e2a5}{seven}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}
+\item 
+int \mbox{\hyperlink{func_8c_a533391314665d6bf1b5575e9a9cd8552}{p}}
+\item 
+int \mbox{\hyperlink{func_8c_a89606eca6b563ec68d2da2e84657736f}{l}} = 0
+\item 
+int \mbox{\hyperlink{func_8c_a16611451551e3d15916bae723c3f59f7}{h}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{func_8c_af2fd05c57257a8c2eee11a1d65918075}\label{func_8c_af2fd05c57257a8c2eee11a1d65918075}} 
+\index{func.c@{func.c}!bl@{bl}}
+\index{bl@{bl}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{bl}{bl}}
+{\footnotesize\ttfamily \#define bl~\char`\"{}▣\char`\"{}}
+
+\mbox{\Hypertarget{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}\label{func_8c_a6c4b361d72eb3767ba424ac9a6ecf52b}} 
+\index{func.c@{func.c}!x@{x}}
+\index{x@{x}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \#define x~20}
+
+\mbox{\Hypertarget{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}\label{func_8c_a0ed6a908288e0cd87f79c1b5ab56d07c}} 
+\index{func.c@{func.c}!y@{y}}
+\index{y@{y}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \#define y~12}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{func_8c_afbeee4a73d70905444c856098f7a3b20}\label{func_8c_afbeee4a73d70905444c856098f7a3b20}} 
+\index{func.c@{func.c}!addlines@{addlines}}
+\index{addlines@{addlines}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{addlines()}{addlines()}}
+{\footnotesize\ttfamily void addlines (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Funzione per il multigiocatore che va a invertire alcune righe della tabella avversaria quando vengono rimosse più di due righe in un colpo solo. \mbox{\Hypertarget{func_8c_ad1ede946a37fc0de1c8aee8a7b421c86}\label{func_8c_ad1ede946a37fc0de1c8aee8a7b421c86}} 
+\index{func.c@{func.c}!changetab@{changetab}}
+\index{changetab@{changetab}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{changetab()}{changetab()}}
+{\footnotesize\ttfamily void changetab (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{char}]{Tab2\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{char}]{tetr\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{int}]{movx,  }\item[{int}]{movy,  }\item[{int}]{movx2,  }\item[{int}]{movy2 }\end{DoxyParamCaption})}
+
+Funzione che va a sostituire alcuni caratteri della tabella di gioco con i blocchi, che poi formano i tertamini. \mbox{\Hypertarget{func_8c_a33df7ab64c99a9106c743e739738a696}\label{func_8c_a33df7ab64c99a9106c743e739738a696}} 
+\index{func.c@{func.c}!checkrandom@{checkrandom}}
+\index{checkrandom@{checkrandom}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{checkrandom()}{checkrandom()}}
+{\footnotesize\ttfamily int checkrandom (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo }\end{DoxyParamCaption})}
+
+Funzione che controlla se ci sono abbastanza pezzi di un determinato tipo. Se i pezzi sono più di 0 allora la funzione ritorna 1, altrimenti genera un nuovo numero random. \mbox{\Hypertarget{func_8c_a00f7b4b1de7f01e8c143900c8724c82e}\label{func_8c_a00f7b4b1de7f01e8c143900c8724c82e}} 
+\index{func.c@{func.c}!checkscorep1@{checkscorep1}}
+\index{checkscorep1@{checkscorep1}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{checkscorep1()}{checkscorep1()}}
+{\footnotesize\ttfamily void checkscorep1 (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione strettamente collegata a \mbox{\hyperlink{func_8c_a0c50fec11d31d5ffeceaf459d9053154}{removelines()}}, infatti quando la funzione \mbox{\hyperlink{func_8c_a0c50fec11d31d5ffeceaf459d9053154}{removelines()}} rimuove una della righe questa funzione sposta in basso tutte le righe sopra. (Usata per modalità singleplayer e multiplayer con p1). \mbox{\Hypertarget{func_8c_a74e58df02c6b8839b9481e02f6e16ce2}\label{func_8c_a74e58df02c6b8839b9481e02f6e16ce2}} 
+\index{func.c@{func.c}!checkscorep2@{checkscorep2}}
+\index{checkscorep2@{checkscorep2}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{checkscorep2()}{checkscorep2()}}
+{\footnotesize\ttfamily void checkscorep2 (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione strettamente collegata a \mbox{\hyperlink{func_8c_a0c50fec11d31d5ffeceaf459d9053154}{removelines()}}, infatti quando la funzione \mbox{\hyperlink{func_8c_a0c50fec11d31d5ffeceaf459d9053154}{removelines()}} rimuove una della righe questa funzione sposta in basso tutte le righe sopra. (Usata per modalità multiplayer con p2). \mbox{\Hypertarget{func_8c_a8642636811ac3c56c171794f1949643c}\label{func_8c_a8642636811ac3c56c171794f1949643c}} 
+\index{func.c@{func.c}!choose@{choose}}
+\index{choose@{choose}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{choose()}{choose()}}
+{\footnotesize\ttfamily void choose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione per selezionare la modalità di gioco. \mbox{\Hypertarget{func_8c_a8f8cacc4cd921080272124abcfa5855f}\label{func_8c_a8f8cacc4cd921080272124abcfa5855f}} 
+\index{func.c@{func.c}!cleartab@{cleartab}}
+\index{cleartab@{cleartab}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{cleartab()}{cleartab()}}
+{\footnotesize\ttfamily void cleartab (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{int}]{movx,  }\item[{int}]{movy }\end{DoxyParamCaption})}
+
+Funzione che rimuove tutti i caratteri indesiderati dalla tabella. \mbox{\Hypertarget{func_8c_a66455c53f0d31ae15446b2a8a9229198}\label{func_8c_a66455c53f0d31ae15446b2a8a9229198}} 
+\index{func.c@{func.c}!colors@{colors}}
+\index{colors@{colors}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{colors()}{colors()}}
+{\footnotesize\ttfamily void colors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+Funzione che assegna il colore al tetramino. \mbox{\Hypertarget{func_8c_aa1d06686b38176848ea51436095156a2}\label{func_8c_aa1d06686b38176848ea51436095156a2}} 
+\index{func.c@{func.c}!copyblock@{copyblock}}
+\index{copyblock@{copyblock}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{copyblock()}{copyblock()}}
+{\footnotesize\ttfamily void copyblock (\begin{DoxyParamCaption}\item[{char}]{tetr\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{char}]{tet\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione importante che copia il valore di uno dei tetramini all\textquotesingle{}interno di tetr1, variabile che viene poi stampata ad ogni ciclo. \mbox{\Hypertarget{func_8c_a58c66d05af5abbe6bf0cf645219634af}\label{func_8c_a58c66d05af5abbe6bf0cf645219634af}} 
+\index{func.c@{func.c}!countlines@{countlines}}
+\index{countlines@{countlines}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{countlines()}{countlines()}}
+{\footnotesize\ttfamily void countlines (\begin{DoxyParamCaption}\item[{char $\ast$}]{Tab }\end{DoxyParamCaption})}
+
+Funzione che conta quante righe di seguito sono state completate. \mbox{\Hypertarget{func_8c_a26a041f74e63799612ee278e55fdb5dd}\label{func_8c_a26a041f74e63799612ee278e55fdb5dd}} 
+\index{func.c@{func.c}!dupanother@{dupanother}}
+\index{dupanother@{dupanother}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{dupanother()}{dupanother()}}
+{\footnotesize\ttfamily void dupanother (\begin{DoxyParamCaption}\item[{char $\ast$}]{Tab,  }\item[{char}]{Tab2\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione che aumenta i punti, del giocatore p1 e del giocatore singolo, a seconda di quante righe vengono rimosse con un solo tetramino. \mbox{\Hypertarget{func_8c_a082847713f4e80511d628d188e1fd516}\label{func_8c_a082847713f4e80511d628d188e1fd516}} 
+\index{func.c@{func.c}!dupanotherp2@{dupanotherp2}}
+\index{dupanotherp2@{dupanotherp2}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{dupanotherp2()}{dupanotherp2()}}
+{\footnotesize\ttfamily void dupanotherp2 (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{char $\ast$}]{Tab2,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione che aumenta i punti del giocatore p2 a seconda di quante righe vengono rimosse con un solo tetramino. \mbox{\Hypertarget{func_8c_a2bb89310b8b59391a66af036a5517116}\label{func_8c_a2bb89310b8b59391a66af036a5517116}} 
+\index{func.c@{func.c}!gameoverreturn@{gameoverreturn}}
+\index{gameoverreturn@{gameoverreturn}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{gameoverreturn()}{gameoverreturn()}}
+{\footnotesize\ttfamily int gameoverreturn (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione che determina se i blocchi escono dalla tabella. \mbox{\Hypertarget{func_8c_a02f332b000f0b245186ce0988c48e56e}\label{func_8c_a02f332b000f0b245186ce0988c48e56e}} 
+\index{func.c@{func.c}!gotoxy@{gotoxy}}
+\index{gotoxy@{gotoxy}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{gotoxy()}{gotoxy()}}
+{\footnotesize\ttfamily void gotoxy (\begin{DoxyParamCaption}\item[{int}]{posx,  }\item[{int}]{posy }\end{DoxyParamCaption})}
+
+Posiziona il cursore alle coordinate posx e posy. \mbox{\Hypertarget{func_8c_a3eb9ab04e251f9dc3a6c918c691bc8b7}\label{func_8c_a3eb9ab04e251f9dc3a6c918c691bc8b7}} 
+\index{func.c@{func.c}!initgame@{initgame}}
+\index{initgame@{initgame}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{initgame()}{initgame()}}
+{\footnotesize\ttfamily void initgame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Init degli elementi di punteggio. \mbox{\Hypertarget{func_8c_a457d1e2b0ce6236fdb7b7545e08a941f}\label{func_8c_a457d1e2b0ce6236fdb7b7545e08a941f}} 
+\index{func.c@{func.c}!initmtet@{initmtet}}
+\index{initmtet@{initmtet}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{initmtet()}{initmtet()}}
+{\footnotesize\ttfamily void initmtet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+Init delle variabili di movimento, colore, forma e altre generalità. \mbox{\Hypertarget{func_8c_ad3bec93887f2a5376b0cc14074cf670b}\label{func_8c_ad3bec93887f2a5376b0cc14074cf670b}} 
+\index{func.c@{func.c}!initntet@{initntet}}
+\index{initntet@{initntet}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{initntet()}{initntet()}}
+{\footnotesize\ttfamily void initntet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo }\end{DoxyParamCaption})}
+
+Init del numero di pezzi della modalità singleplayer. \mbox{\Hypertarget{func_8c_a6276b49bdb9c9be23b282e7be3ca7c69}\label{func_8c_a6276b49bdb9c9be23b282e7be3ca7c69}} 
+\index{func.c@{func.c}!mod2gameover@{mod2gameover}}
+\index{mod2gameover@{mod2gameover}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{mod2gameover()}{mod2gameover()}}
+{\footnotesize\ttfamily void mod2gameover (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{char}]{Tab2\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm,  }\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo }\end{DoxyParamCaption})}
+
+Funzione multiplayer di gameover. \mbox{\Hypertarget{func_8c_a8868026c5834c13b353e777e9db461d6}\label{func_8c_a8868026c5834c13b353e777e9db461d6}} 
+\index{func.c@{func.c}!movep1@{movep1}}
+\index{movep1@{movep1}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{movep1()}{movep1()}}
+{\footnotesize\ttfamily void movep1 (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Determina lo spostamento del giocatore, in questo caso la funzione viene utilizzata per la modalità giocatore singolo e per il p1 nella modalità multigiocatore. \mbox{\Hypertarget{func_8c_a6f1b7ab1a2f7df2cfed3e753b156f22a}\label{func_8c_a6f1b7ab1a2f7df2cfed3e753b156f22a}} 
+\index{func.c@{func.c}!movep2@{movep2}}
+\index{movep2@{movep2}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{movep2()}{movep2()}}
+{\footnotesize\ttfamily void movep2 (\begin{DoxyParamCaption}\item[{char}]{Tab2\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Determina il movimento del p2 nella modalità multigiocatore. \mbox{\Hypertarget{func_8c_abf3290c02f9b57e65a5d4816bd3a27c1}\label{func_8c_abf3290c02f9b57e65a5d4816bd3a27c1}} 
+\index{func.c@{func.c}!otherblockcollision@{otherblockcollision}}
+\index{otherblockcollision@{otherblockcollision}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{otherblockcollision()}{otherblockcollision()}}
+{\footnotesize\ttfamily void otherblockcollision (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+Funzione che controlla le collisioni generali. \mbox{\Hypertarget{func_8c_ab04fcbf2437d93c5b5518bb3e2642ac3}\label{func_8c_ab04fcbf2437d93c5b5518bb3e2642ac3}} 
+\index{func.c@{func.c}!PrintCharTab@{PrintCharTab}}
+\index{PrintCharTab@{PrintCharTab}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{PrintCharTab()}{PrintCharTab()}}
+{\footnotesize\ttfamily void Print\+Char\+Tab (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+Funzione che stampa la tabella secondo diversi criteri. \mbox{\Hypertarget{func_8c_a00ba8a942709b13ffb1423bff2a232d6}\label{func_8c_a00ba8a942709b13ffb1423bff2a232d6}} 
+\index{func.c@{func.c}!randomblock@{randomblock}}
+\index{randomblock@{randomblock}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{randomblock()}{randomblock()}}
+{\footnotesize\ttfamily void randomblock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo,  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+Funzione che assegna i pezzi in base al numero randomico generato dalla funzione \mbox{\hyperlink{func_8c_a34f5b70851f3648f0bb8dbf7a790b173}{randomnumber()}}. \mbox{\Hypertarget{func_8c_a34f5b70851f3648f0bb8dbf7a790b173}\label{func_8c_a34f5b70851f3648f0bb8dbf7a790b173}} 
+\index{func.c@{func.c}!randomnumber@{randomnumber}}
+\index{randomnumber@{randomnumber}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{randomnumber()}{randomnumber()}}
+{\footnotesize\ttfamily int randomnumber (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione che genera numeri random che poi vengono passati a \mbox{\hyperlink{func_8c_a00ba8a942709b13ffb1423bff2a232d6}{randomblock()}}. \mbox{\Hypertarget{func_8c_a0c50fec11d31d5ffeceaf459d9053154}\label{func_8c_a0c50fec11d31d5ffeceaf459d9053154}} 
+\index{func.c@{func.c}!removelines@{removelines}}
+\index{removelines@{removelines}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{removelines()}{removelines()}}
+{\footnotesize\ttfamily int removelines (\begin{DoxyParamCaption}\item[{char $\ast$}]{Tab }\end{DoxyParamCaption})}
+
+Funzione che va a rimuovere tutte le righe completate. \mbox{\Hypertarget{func_8c_a309191027b3a482d2e77e0c15c37c186}\label{func_8c_a309191027b3a482d2e77e0c15c37c186}} 
+\index{func.c@{func.c}!restoreproblem@{restoreproblem}}
+\index{restoreproblem@{restoreproblem}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{restoreproblem()}{restoreproblem()}}
+{\footnotesize\ttfamily void restoreproblem (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione che corregge qualche errore di stampa dei bordi della tabella. \mbox{\Hypertarget{func_8c_a706b72067b721ff9a44610feadcd3ea4}\label{func_8c_a706b72067b721ff9a44610feadcd3ea4}} 
+\index{func.c@{func.c}!returngameover@{returngameover}}
+\index{returngameover@{returngameover}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{returngameover()}{returngameover()}}
+{\footnotesize\ttfamily void returngameover (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione singleplayer che determina gameover quando un tetramino esce dalla tabella. \mbox{\Hypertarget{func_8c_a7c7fdad815c4a6889d481a2436a35a00}\label{func_8c_a7c7fdad815c4a6889d481a2436a35a00}} 
+\index{func.c@{func.c}!rotate\_process@{rotate\_process}}
+\index{rotate\_process@{rotate\_process}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_process()}{rotate\_process()}}
+{\footnotesize\ttfamily void rotate\+\_\+process (\begin{DoxyParamCaption}\item[{char}]{tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Funzione per la rotazione. \mbox{\Hypertarget{func_8c_a02526b5fcce6355fc1b772644b53f9e5}\label{func_8c_a02526b5fcce6355fc1b772644b53f9e5}} 
+\index{func.c@{func.c}!scorecheck@{scorecheck}}
+\index{scorecheck@{scorecheck}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{scorecheck()}{scorecheck()}}
+{\footnotesize\ttfamily void scorecheck (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+Funzione per stampare lo score del giocatore. \mbox{\Hypertarget{func_8c_ad5b4ddc7fc24e9b0ed398a4988dcf0e7}\label{func_8c_ad5b4ddc7fc24e9b0ed398a4988dcf0e7}} 
+\index{func.c@{func.c}!sdoppiapezzi@{sdoppiapezzi}}
+\index{sdoppiapezzi@{sdoppiapezzi}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{sdoppiapezzi()}{sdoppiapezzi()}}
+{\footnotesize\ttfamily void sdoppiapezzi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm,  }\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo }\end{DoxyParamCaption})}
+
+Init del numero di pezzi della modalità multigiocatore. \mbox{\Hypertarget{func_8c_af7a67e506085e51a147d8cff930763d2}\label{func_8c_af7a67e506085e51a147d8cff930763d2}} 
+\index{func.c@{func.c}!spacep@{spacep}}
+\index{spacep@{spacep}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{spacep()}{spacep()}}
+{\footnotesize\ttfamily void spacep (\begin{DoxyParamCaption}\item[{char}]{space\mbox{[}5\mbox{]}\mbox{[}1\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione che stampa una matrice di spazi vuoti. \mbox{\Hypertarget{func_8c_aac34210564f72290aa1e2dc985470083}\label{func_8c_aac34210564f72290aa1e2dc985470083}} 
+\index{func.c@{func.c}!stoptetr@{stoptetr}}
+\index{stoptetr@{stoptetr}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{stoptetr()}{stoptetr()}}
+{\footnotesize\ttfamily int stoptetr (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+La funzione stoptetr controlla la collisione con il suolo e la collisione dal basso. \mbox{\Hypertarget{func_8c_a0d45ea75da607b121182c65a130cac60}\label{func_8c_a0d45ea75da607b121182c65a130cac60}} 
+\index{func.c@{func.c}!tab@{tab}}
+\index{tab@{tab}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{tab()}{tab()}}
+{\footnotesize\ttfamily void tab (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+Funzione che passa la tabella a \mbox{\hyperlink{func_8c_ab04fcbf2437d93c5b5518bb3e2642ac3}{Print\+Char\+Tab()}} per stamparla. \mbox{\Hypertarget{func_8c_abe812d96fdd0470234877991ade66713}\label{func_8c_abe812d96fdd0470234877991ade66713}} 
+\index{func.c@{func.c}!tetrgui@{tetrgui}}
+\index{tetrgui@{tetrgui}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{tetrgui()}{tetrgui()}}
+{\footnotesize\ttfamily void tetrgui (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione che stampa la Gui di gioco, dove vengono mostrati i pezzi rimanenti. \mbox{\Hypertarget{func_8c_aed525c96ea259f252b021035ee87e208}\label{func_8c_aed525c96ea259f252b021035ee87e208}} 
+\index{func.c@{func.c}!win@{win}}
+\index{win@{win}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily void win (\begin{DoxyParamCaption}\item[{char}]{Tab\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{\mbox{\hyperlink{structntet}{ntet}} $\ast$}]{pezzo,  }\item[{\mbox{\hyperlink{structmtet}{mtet}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{gm }\end{DoxyParamCaption})}
+
+Funzione che determina la vittoria del giocatore appena i tetramini sono esauriti. (Modalità singleplayer). 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{func_8c_a0712ed85d0e6c83a03a0c05d7c7fa053}\label{func_8c_a0712ed85d0e6c83a03a0c05d7c7fa053}} 
+\index{func.c@{func.c}!five@{five}}
+\index{five@{five}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{five}{five}}
+{\footnotesize\ttfamily char five\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
+\mbox{\Hypertarget{func_8c_a929ddaca124c3f0cf7cd47fbdf2257e3}\label{func_8c_a929ddaca124c3f0cf7cd47fbdf2257e3}} 
+\index{func.c@{func.c}!four@{four}}
+\index{four@{four}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{four}{four}}
+{\footnotesize\ttfamily char four\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
+\mbox{\Hypertarget{func_8c_a16611451551e3d15916bae723c3f59f7}\label{func_8c_a16611451551e3d15916bae723c3f59f7}} 
+\index{func.c@{func.c}!h@{h}}
+\index{h@{h}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int h = 0}
+
+\mbox{\Hypertarget{func_8c_a89606eca6b563ec68d2da2e84657736f}\label{func_8c_a89606eca6b563ec68d2da2e84657736f}} 
+\index{func.c@{func.c}!l@{l}}
+\index{l@{l}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily int l = 0}
+
+\mbox{\Hypertarget{func_8c_a1ea075e9591db618f87c13ea01077cde}\label{func_8c_a1ea075e9591db618f87c13ea01077cde}} 
+\index{func.c@{func.c}!one@{one}}
+\index{one@{one}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{one}{one}}
+{\footnotesize\ttfamily char one\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
+\mbox{\Hypertarget{func_8c_a533391314665d6bf1b5575e9a9cd8552}\label{func_8c_a533391314665d6bf1b5575e9a9cd8552}} 
+\index{func.c@{func.c}!p@{p}}
+\index{p@{p}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily int p}
+
+\mbox{\Hypertarget{func_8c_afb13b4245798a175d1b1daaa2786e2a5}\label{func_8c_afb13b4245798a175d1b1daaa2786e2a5}} 
+\index{func.c@{func.c}!seven@{seven}}
+\index{seven@{seven}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{seven}{seven}}
+{\footnotesize\ttfamily char seven\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
+\mbox{\Hypertarget{func_8c_a121389ffce45bd9fc628b1149cc99db2}\label{func_8c_a121389ffce45bd9fc628b1149cc99db2}} 
+\index{func.c@{func.c}!six@{six}}
+\index{six@{six}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{six}{six}}
+{\footnotesize\ttfamily char six\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
+\mbox{\Hypertarget{func_8c_a4e24f316c9beb1d26f62e6edced6cbac}\label{func_8c_a4e24f316c9beb1d26f62e6edced6cbac}} 
+\index{func.c@{func.c}!three@{three}}
+\index{three@{three}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{three}{three}}
+{\footnotesize\ttfamily char three\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
+\mbox{\Hypertarget{func_8c_ac54f7f8c8d38a642711efa4a1a51a224}\label{func_8c_ac54f7f8c8d38a642711efa4a1a51a224}} 
+\index{func.c@{func.c}!two@{two}}
+\index{two@{two}!func.c@{func.c}}
+\doxysubsubsection{\texorpdfstring{two}{two}}
+{\footnotesize\ttfamily char two\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} = \{\{\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}\#\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\},\{\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}n\textquotesingle{}\}\}}
+
