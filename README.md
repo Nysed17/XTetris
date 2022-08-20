@@ -7,3 +7,6 @@ CPU mode.
 To play:
 cd src
 make
+
+![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/1.png)
+![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/2.png)
