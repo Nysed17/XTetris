@@ -10,3 +10,5 @@ make
 
 ![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/1.png)
 ![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/2.png)
+![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/3.png)
+![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/4.png)
