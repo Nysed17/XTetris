@@ -5,6 +5,10 @@ There're Single Player mode and Multiplayer mode. In the future i will add Playe
 CPU mode.
 
 To play:
+```shell
+$ cd src
+$ make
+```
 cd src
 make
 
