@@ -6,8 +6,7 @@ CPU mode.
 
 To play:
 ```shell
-$ make
-%inside the XTetris folder
+$ make (inside the XTetris folder)
 ```
 
 ![alt text](https://github.com/Nysed17/XTetris/blob/main/Screenshot/1.png)
