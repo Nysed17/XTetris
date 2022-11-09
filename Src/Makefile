@@ -1,3 +1,0 @@
-all:
-	make main
-	./main
